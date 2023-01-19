@@ -11,9 +11,10 @@ class App extends Component {
   };
 
   onSubmit = contact => {
-    this.setState(prevState => ({
-      contacts: [...prevState.contacts, contact],
-    }));
+    const { contacts } = this.state;
+    this.setState({
+      contacts: [...contacts, contact],
+    });
   };
 
   onChange = value => {
@@ -22,10 +23,9 @@ class App extends Component {
 
   onDelete = id => {
     const { contacts } = this.state;
-    this.setState(prevState => ({
-      ...prevState,
+    this.setState({
       contacts: contacts.filter(el => el.id !== id),
-    }));
+    });
   };
 
   render() {
