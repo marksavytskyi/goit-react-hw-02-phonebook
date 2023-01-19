@@ -45,7 +45,7 @@ class App extends Component {
 
         <ContactForm onSubmit={this.onSubmit} contacts={contacts}></ContactForm>
 
-        <h2 style={{ textAlign: 'center' }}>Contacts</h2>
+        <h2 style={{ textAlign: 'center' }}>Contacts:</h2>
 
         <Filter onChange={this.onChange}></Filter>
 
