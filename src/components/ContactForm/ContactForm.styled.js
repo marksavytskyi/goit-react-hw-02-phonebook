@@ -40,7 +40,7 @@ export const Button = styled.button`
   border: 2px solid rgb(0, 204, 255);
   border-radius: 10px;
 
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
 
   &:hover {
